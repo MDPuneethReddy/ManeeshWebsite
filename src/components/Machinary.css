@@ -1,0 +1,31 @@
+/* Machinery container */
+.machinery-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Wrap items into multiple rows */
+    gap: 20px; /* Add gap between items */
+    padding-left: 80px;
+  }
+  
+  /* Individual machinery item */
+  .machinery-item {
+    flex: 1 1 45%; /* Each item takes up 45% of the container width */
+    max-width: 45%; /* Maximum width of each item */
+  }
+  
+  .machinery-image {
+    width: 100%;
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure all images fill their containers */
+  }
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .machinery-item {
+      flex-basis: 100%; /* Each item takes up full width on smaller screens */
+      max-width: 100%; /* Maximum width of each item */
+      
+    }
+    .machinery-container{
+        padding-left: 0px;
+    }
+  }
+  

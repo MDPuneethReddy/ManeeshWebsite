@@ -54,7 +54,7 @@ const About = () => {
   </div>
 
   {/* Third Section: Left Text, Right Image */}
-  <div className="section">
+  <div className="section" style={{backgroundColor:"#F5F5F5"}}>
     <div className="grid">
       <div className="text">
         <h2 style={{fontSize:"60px",paddingBottom:"20px"}}>Our Vision</h2>
@@ -66,7 +66,7 @@ const About = () => {
       </div>
     </div>
   </div>
-  <h2 style={{fontSize:"60px",paddingBottom:"20px",textAlign:"center",textDecoration: "underline"}}>Founder</h2>
+  {/* <h2 style={{fontSize:"60px",paddingBottom:"20px",textAlign:"center",textDecoration: "underline"}}>Founder</h2>
   <div className="section" style={{backgroundColor:"#F5F5F5"}}>
     <div className="grid">
       <div className="image">
@@ -79,7 +79,7 @@ const About = () => {
 </h2>
       </div>
     </div>
-  </div>
+  </div> */}
   <div className="section" style={{paddingTop:"50px",backgroundColor: "#132b40"}}>
         <h2 style={{fontSize:'50px',textAlign:"center",paddingBottom:"40px",textDecoration: "underline",color:"white"}}>Types of Dies we Make</h2>
         <h4 style={{fontSize:'40px',textAlign:"center",paddingBottom:"40px",color:"white"}}>Molds</h4>

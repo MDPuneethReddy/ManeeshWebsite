@@ -7,6 +7,7 @@ import { Machinery } from './components/Machinary';
 import { PastProjects } from './components/PastProjects';
 import { About } from './components/About';
 import { Link } from 'react-router-dom';
+import { Contact } from './components/Contact';
 
 
 const HomePage = () => {
@@ -75,6 +76,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/past-projects" element={<PastProjects />} />
         <Route path="/machinery" element={<Machinery />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
 

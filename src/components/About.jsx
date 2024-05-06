@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css"; 
 import "./Machinary.css"
 import { Typography, Grid,  } from '@mui/material';
-import { Card, CardBody, CardFooter, CardHeader, Image } from "@nextui-org/react";
+import { Card, CardBody,  CardHeader} from "@nextui-org/react";
 
 import PopOutCard from './popoutCard';
 const About = () => {

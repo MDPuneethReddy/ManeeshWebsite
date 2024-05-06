@@ -1,7 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardFooter, CardHeader, Image } from "@nextui-org/react";
 import "./ImagesList.css"; // Import custom CSS file
-import { FaArrowRight } from "react-icons/fa";
 const pressureDieImages=[
     {"path":"../../prevInPressure1.png"},
     {"path":"../../prevInPressure2.png"},

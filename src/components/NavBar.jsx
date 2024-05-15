@@ -34,7 +34,7 @@ const NavBar = () => {
               <img src="../../logo.png" alt="Logo" style={{ height: '40px' }} />
               <Link to="/">
               <Typography variant="h6" component="div" sx={{ ml: 2, fontSize: { xs: '1rem', md: '1.25rem' } }}>
-  Die Experts 1
+  Diexperts1
 </Typography>
 </Link>
             </Box>
@@ -75,18 +75,14 @@ const NavBar = () => {
           <Link to="/about">
   <Typography variant="body1" sx={{ mr: 2 }}>About</Typography>
 </Link>
-          <Link to="/services">
-  <Typography variant="body1" sx={{ mr: 2 }}>
-    Services
-  </Typography>
-</Link>
+          
 <Link to="/past-projects">
   <Typography variant="body1" sx={{ mr: 2 }}>
     Past Projects
   </Typography>
 </Link>
 <Link to="/machinery">
-  <Typography variant="body1">Machinery</Typography>
+  <Typography variant="body1">Services</Typography>
 </Link>
 <Link to="/contact">
   <Typography variant="body1">Contact US</Typography>

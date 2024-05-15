@@ -14,6 +14,9 @@ const pressureDieImages=[
     {"path":"../../prevInPressure11.png"},
  
 ]
+const pressureMetalImages=[
+    {"path":"../../prevInMetal1.png"}
+]
 
 const pressurePlasticImages=[
     {"path":"../../prevInPlastic1.png"},
@@ -39,7 +42,27 @@ const pressureInsertImages=[
 ]
 const pressurePressImages=[
     {"path":"../../prevInPress1.png"},
-    {"path":"../../prevInPress2.png"}
+    {"path":"../../prevInPress2.png"},
+    {"path":"../../prevInPress3.jpg"},
+    {"path":"../../prevInPress4.jpg"},
+    {"path":"../../prevInPress5.jpg"},
+    {"path":"../../prevInPress6.jpg"},
+    {"path":"../../prevInPress7.jpg"},
+    {"path":"../../prevInPress8.jpg"},
+    {"path":"../../prevInPress9.jpg"},
+    {"path":"../../prevInPress10.jpg"},
+    {"path":"../../prevInPress11.jpg"},
+    {"path":"../../prevInPress12.jpg"},
+    {"path":"../../prevInPress13.jpg"},
+    {"path":"../../prevInPress14.jpg"},
+    {"path":"../../prevInPress15.jpg"},
+    {"path":"../../prevInPress16.jpg"},
+    {"path":"../../prevInPress17.jpg"},
+    {"path":"../../prevInPress18.jpg"},
+    {"path":"../../prevInPress19.jpg"},
+    {"path":"../../prevInPress20.jpg"},
+    {"path":"../../prevInPress21.jpg"},
+    
 ]
 const PastProjects = () => {
   return (
@@ -105,6 +128,16 @@ const PastProjects = () => {
       <div className="image-list-container">
       <div className="image-list">
         {pressurePressImages.map((image, index) => (
+          <img key={index} src={image.path} alt={image.title} className="image-item" />
+        ))}
+      </div>
+    </div>
+    <h2 style={{ textAlign: "center", marginBottom: "20px",fontSize:"40px" }}>
+    Metal Injection Molding
+      </h2>
+      <div className="image-list-container">
+      <div className="image-list">
+        {pressureMetalImages.map((image, index) => (
           <img key={index} src={image.path} alt={image.title} className="image-item" />
         ))}
       </div>

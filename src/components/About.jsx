@@ -30,7 +30,7 @@ const About = () => {
       <div className="text">
         <h2 style={{fontSize:"80px"}}>About US</h2>
         <p>
-          In Die Experts 1, Quality is important for us. We specialize in Molds, Press Tools, and Pressure Die Casting. Our engineers are highly skilled with an eye for detail. Our knowledge and experience of process and control ensures that quality is of the highest importance from quotation/contract review through to packing and dispatch. 
+          In Die Experts 1, Quality is important for us. We specialize in Plastic and Metal Injection Molds, Press Tools and Pressure Die Casting. Our engineers are highly skilled with an eye for detail. Our knowledge and experience of process and control ensures that quality is of the highest importance from quotation/contract review through to packing and dispatch. 
         </p>
       </div>
       <div className="image">
@@ -121,12 +121,33 @@ const About = () => {
 </div>
 
 
-    <Grid item  style={{backgroundColor:"#2e475d"}}>
+    <Grid item  style={{backgroundColor:"#2e475d",paddingLeft:"25px",paddingRight:"25px"}}>
       <PopOutCard color="#F5F5F5">
       <h4 style={{fontSize:'40px',textAlign:"center",paddingBottom:"20px",paddingTop:"20px"}}>Pressure Die Casting</h4>
         <Typography variant="body2" paragraph style={{ color: "black" }}>
         <p>          Pressure die casting is a quick, reliable, and cost-effective manufacturing process for production of high volume, metal components that are net-shaped have tight tolerances. Basically, the pressure die casting process consists of injecting under high pressure a molten metal alloy into a steel mold (or tool). This gets solidified rapidly (from milliseconds to a few seconds) to form a net-shaped component. It is then automatically extracted.
 </p>
+        </Typography>
+      </PopOutCard>
+    </Grid>
+    <Grid item xs={12} md={6} style={{ backgroundColor: "#2e475d",paddingTop:"20px",paddingLeft:"25px",paddingRight:"25px" }}>
+      <PopOutCard color="#F5F5F5">
+        <h4 style={{ fontSize: '40px', textAlign: "center", paddingBottom: "20px", paddingTop: "20px", color: "#2e475d" }}>Metal Injection Molding</h4>
+        <Typography variant="body2" paragraph style={{ color: "#2e475d" }}>
+          Metal injection molding is a niche process in which finely metal powdered material is mixed with binder to create a feedstock and then it is injected to get solidified complex-shaped parts.
+          <br />
+          <br />
+          Metal Injection Molding Process:
+          <br />
+          The MIM process consists of major steps,
+          <br />
+          1. Compounding
+          <br />
+          2. Molding
+          <br />
+          3. Debinding
+          <br />
+          4. Sintering
         </Typography>
       </PopOutCard>
     </Grid>

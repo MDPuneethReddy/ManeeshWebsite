@@ -113,7 +113,7 @@ const ContactInfo = () => {
     <Box display="flex" flexDirection="column" alignItems="center">
       <img src="../../logo.png" alt="Logo" style={{ height: '200px', marginBottom: '10px' }} />
       <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
-        Die Experts 1
+        Diexperts1
       </Typography>
     </Box>
   </Grid>
@@ -130,6 +130,14 @@ const ContactInfo = () => {
         <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
           diexperts1@gmail.com
         </Typography>
+
+      </Box>
+      <Box display="flex" alignItems="center">
+        <MdEmail style={{ marginRight: '10px' }} />
+        <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
+          sales@diexperts1.com
+        </Typography>
+        
       </Box>
     </Box>
   </Grid>

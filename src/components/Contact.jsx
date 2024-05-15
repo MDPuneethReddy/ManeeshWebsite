@@ -4,7 +4,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,19 +22,42 @@ const Contact = () => {
       [name]: value
     });
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission, e.g., send data to backend or display it
-    console.log(formData);
-    // Reset form fields after submission
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-      subject: ''
+  function handleSubmit(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    
+    fetch('https://formspree.io/f/meqydvge', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        toast.success('Message sent successfully', {
+          position: 'top-center',
+          autoClose: 3000, 
+          hideProgressBar: true,
+        });
+      } else {
+        toast.error('Message not sent', {
+          position: 'top-center',
+          autoClose: 3000, 
+          hideProgressBar: true,
+        });
+      }
+    })
+    .catch(error => {
+      toast.error('Message not sent', {
+        position: 'top-center',
+        autoClose: 3000, 
+        hideProgressBar: true,
+      });
     });
-  };
+  }
+  
 
   return (
     <div>
@@ -102,6 +126,7 @@ const Contact = () => {
       </div>
     </div>
     <ContactInfo />
+    <ToastContainer />
     </div>
   );
 };

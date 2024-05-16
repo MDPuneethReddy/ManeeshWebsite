@@ -78,12 +78,14 @@ const PastProjects = () => {
           house hold items etc,. We also provide production service with Injection Mold, Blow
           Mold and Compression molding machines. We have Feromatic Milacron.
         </p>
+        <br />
         <p>
           <strong>In press tools:</strong> We have done 200 tools like draw tools, blanking
           tools, piercing dies, compound tools, cam tools, casting dies. We also provide
           production service. We have production like 30ton, 90ton, 160 ton and 350ton
           mechanical press.
         </p>
+        <br />
         <p>
           <strong>In Pressure Die casting:</strong> We have done almost 80 Dies in Multi
           cavity, Single Cavity and also mechanical parts with machining and production. For
@@ -91,6 +93,11 @@ const PastProjects = () => {
           provide the end machine parts with any sort of machining with CNC Lathe, Milling,
           Wire Cut and EDM machines.
         </p>
+        <br />
+        <p>
+        <strong>Metal Injection Molding: </strong> we have started recently and done 10-12 dies in MIM. We have the required machine for the trail check and production too. We will deliver the final Product.
+        </p>
+        <br />
       </div>
       <h2 style={{ textAlign: "center", marginBottom: "20px",fontSize:"40px" }}>
       Pressure Die Casting 

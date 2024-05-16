@@ -35,13 +35,13 @@ const HomePage = () => {
           variant="body1"
           paragraph
           style={{
-            fontSize: 'clamp(16px, 4vw, 60px)',
+            fontSize: 'clamp(30px, 4vw, 60px)',
             lineHeight: '1.3', 
             color: 'white',
             margin: '0 20px', 
           }}
         >
-          Expertise in Molds, Press Tools, and Pressure Die Castings
+          Expertise in Die Making
         </Typography>
         <Link to="/About">
           <Button

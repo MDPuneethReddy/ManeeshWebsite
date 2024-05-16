@@ -9,6 +9,7 @@ const About = () => {
     const molds=[
         
         {"name":"Injection Molds","Description":"Injection molds are commonly used in manufacturing processes to produce plastic parts with precision and efficiency."},
+        {"name":"Blow Molding","Description":"Blow molding is a manufacturing process that creates hollow plastic parts by inflating a heated plastic tube (parison) inside a mold cavity to form the desired shape."},
         {"name":"Hot Runner Molds","Description":"Hot runner molds utilize a heating system to maintain molten plastic within the mold cavity, enabling faster production cycles and reducing material waste."},
         {"name":"Family Molds","Description":"Family molds are designed to produce multiple parts simultaneously, optimizing efficiency and reducing manufacturing costs."},
         {"name":"Rotational Molding","Description":"Rotational molding is a manufacturing process used to create hollow plastic parts by rotating a mold around two axes, ensuring even distribution of material for consistent results."},
@@ -81,7 +82,7 @@ const About = () => {
     </div>
   </div> */}
   <div className="section" style={{paddingTop:"50px",backgroundColor: "#132b40"}}>
-        <h2 style={{fontSize:'50px',textAlign:"center",paddingBottom:"40px",textDecoration: "underline",color:"white"}}>Types of Dies we Make</h2>
+        <h2 style={{fontSize:'50px',textAlign:"center",paddingBottom:"40px",color:"white"}}>Types of Dies we Make</h2>
         <h4 style={{fontSize:'40px',textAlign:"center",paddingBottom:"40px",color:"white"}}>Molds</h4>
 
         <div style={{ backgroundColor: "#F5F5F5", color: "white" }}>
@@ -89,14 +90,14 @@ const About = () => {
   <div className="machinery-container" style={{ display: "flex",backgroundColor:  "#132b40", flexWrap: "wrap", justifyContent: "center" }}>
     {molds.map((item, index) => (
       <div key={index} className="machinery-item" style={{ width: "calc(100% / 3)", padding: "10px" }}>
-        <Card>
+        <PopOutCard>
           <CardHeader className="pb-0 pt-2 px-4 flex-col ">
             <h4 className="font-bold text-large" style={{ textAlign: "center" }}>{item.name}</h4>
           </CardHeader>
           <CardBody className="overflow-visible py-2 flex justify-center items-center">
             <p>{item.Description}</p>
           </CardBody>
-        </Card>
+        </PopOutCard>
       </div>
     ))}
   </div>
@@ -107,32 +108,32 @@ const About = () => {
   <div className="machinery-container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
     {pressTools.map((item, index) => (
       <div key={index} className="machinery-item" style={{ width: "calc(100% / 3)", padding: "10px" }}>
-        <Card>
+        <PopOutCard color="#F5F5F5">
           <CardHeader className="pb-0 pt-2 px-4 flex-col ">
             <h4 className="font-bold text-large" style={{ textAlign: "center" }}>{item.name}</h4>
           </CardHeader>
           <CardBody className="overflow-visible py-2 flex justify-center items-center">
             <p>{item.Description}</p>
           </CardBody>
-        </Card>
+        </PopOutCard>
       </div>
     ))}
   </div>
 </div>
+<h4 style={{fontSize:'40px',textAlign:"center",paddingBottom:"20px",paddingTop:"20px",color:"white"}}>Pressure Die Casting</h4>
 
 
-    <Grid item  style={{backgroundColor:"#2e475d",paddingLeft:"25px",paddingRight:"25px"}}>
+    <Grid item  style={{paddingLeft:"25px",paddingRight:"25px"}}>
       <PopOutCard color="#F5F5F5">
-      <h4 style={{fontSize:'40px',textAlign:"center",paddingBottom:"20px",paddingTop:"20px"}}>Pressure Die Casting</h4>
         <Typography variant="body2" paragraph style={{ color: "black" }}>
         <p>          Pressure die casting is a quick, reliable, and cost-effective manufacturing process for production of high volume, metal components that are net-shaped have tight tolerances. Basically, the pressure die casting process consists of injecting under high pressure a molten metal alloy into a steel mold (or tool). This gets solidified rapidly (from milliseconds to a few seconds) to form a net-shaped component. It is then automatically extracted.
 </p>
         </Typography>
       </PopOutCard>
     </Grid>
-    <Grid item xs={12} md={6} style={{ backgroundColor: "#2e475d",paddingTop:"20px",paddingLeft:"25px",paddingRight:"25px" }}>
+    <h4 style={{ fontSize: '40px', textAlign: "center", paddingBottom: "20px", paddingTop: "20px", color: "white" }}>Metal Injection Molding</h4>
+    <Grid item xs={12} md={6} style={{ paddingTop:"20px",paddingLeft:"25px",paddingRight:"25px" }}>
       <PopOutCard color="#F5F5F5">
-        <h4 style={{ fontSize: '40px', textAlign: "center", paddingBottom: "20px", paddingTop: "20px", color: "#2e475d" }}>Metal Injection Molding</h4>
         <Typography variant="body2" paragraph style={{ color: "#2e475d" }}>
           Metal injection molding is a niche process in which finely metal powdered material is mixed with binder to create a feedstock and then it is injected to get solidified complex-shaped parts.
           <br />

@@ -14,21 +14,41 @@ const HomePage = () => {
 
   return (
     <NextUIProvider>
-    <div className="mx-auto max-w-screen-xl" style={{ padding: 0 }}>
-      {/* Hero Image Section */}
+  <div className="mx-auto max-w-screen-xl" style={{ padding: 0 }}>
+    {/* Hero Image Section */}
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100vh',
+        backgroundImage: `url('../Home2.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        textAlign: 'center',
+      }}
+    >
+      {/* Overlay */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the opacity as needed
+          zIndex: 1,
+        }}
+      ></div>
+
+      {/* Text Content */}
       <div
         style={{
           position: 'relative',
-          width: '100%',
-          height: '100vh', 
-          backgroundImage: `url('../Home2.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center', 
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          textAlign: 'center'
+          zIndex: 2,
         }}
       >
         <Typography
@@ -36,9 +56,9 @@ const HomePage = () => {
           paragraph
           style={{
             fontSize: 'clamp(30px, 4vw, 60px)',
-            lineHeight: '1.3', 
+            lineHeight: '1.3',
             color: 'white',
-            margin: '0 20px', 
+            margin: '0 20px',
           }}
         >
           Expertise in Die Making
@@ -59,6 +79,7 @@ const HomePage = () => {
         </Link>
       </div>
     </div>
+  </div>
 </NextUIProvider>
 
   );

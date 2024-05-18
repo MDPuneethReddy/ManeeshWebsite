@@ -11,10 +11,10 @@ const MachinaryImages = [
   {"title":"CNC Milling 1150*700*550","path":"../../services6.jpg"},
   {"title":"CNC Milling 650*450*350","path":"../../services7.jpg"},
   {"title":"CNC Milling 1200*850*650","path":"../../services8.jpg"},
-  {"title":"CNC Turning 350*400","path":"../../services9.jpg"},
+  {"title":"CNC Turning 350*400","path":"../../services9.jpeg"},
   {"title":"Wire Cut Machine 450*350*300","path":"../../services10.jpg"},
   {"title":"Wire Drill Machine 250*250*500","path":"../../services11.jpg"},
-  {"title":"Electro Dischsrge Machine 500*350*250","path":"../../services12.jpg"}
+  {"title":"Electro Dischsrge Machine 500*350*250","path":"../../services12.jpeg"}
 ];
 
 const Machinery = () => {

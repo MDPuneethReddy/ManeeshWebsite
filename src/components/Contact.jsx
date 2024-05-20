@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -155,6 +157,13 @@ const ContactInfo = () => {
         <MdEmail style={{ marginRight: '10px' }} />
         <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
           sales@diexperts1.com
+        </Typography>
+        
+      </Box>
+      <Box display="flex" alignItems="center">
+        <FaLocationDot style={{ marginRight: '10px' }} />
+        <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
+          5-36/173, Near Venkateswara Swami Temple Prashanthi Nagar, I.E., Kukatpally,Hyderabad-72
         </Typography>
         
       </Box>

@@ -67,6 +67,16 @@ const About = () => {
       </div>
     </div>
   </div>
+  <div className="section" style={{ backgroundColor: "#F5F5F5" }}>
+        <div className="grid">
+          <div className="text">
+            <h2 style={{ fontSize: "60px", paddingBottom: "20px", textAlign: "center"}}>Founder</h2>
+            <h2 style={{ fontSize: "40px", paddingBottom: "20px", textAlign: "center" }}>Jasti Sai Maneesh</h2>
+            <h3 style={{ fontSize: "20px", paddingBottom: "20px", textAlign: "center" }}>Founder and Operator of Die Experts 1</h3>
+
+          </div>
+        </div>
+      </div>
   {/* <h2 style={{fontSize:"60px",paddingBottom:"20px",textAlign:"center",textDecoration: "underline"}}>Founder</h2>
   <div className="section" style={{backgroundColor:"#F5F5F5"}}>
     <div className="grid">

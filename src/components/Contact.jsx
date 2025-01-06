@@ -149,7 +149,7 @@ const ContactInfo = () => {
       <Box display="flex" alignItems="center" marginBottom="10px">
         <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
         <Typography variant="h6" component="div" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
-          +91 8897767753/ +91 9603292763
+          040-29331504 / +91 8897767753
         </Typography>
       </Box>
       
